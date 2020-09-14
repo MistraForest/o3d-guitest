@@ -9,9 +9,9 @@ step("Goto O3D page", async function () {
 });
 
 step("Enter credentials", async function () {
-    await write('aUser');
+    await write('D0X02794');
     await focus(textBox('Password'));
-    await write('aPassword');
+    await write('YydCMrAx37');
     await press('Enter');
 });
 

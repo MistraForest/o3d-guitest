@@ -2,7 +2,7 @@ const { goto, write, textBox, focus, press, click, above } = require('taiko');
 const path = require("path");
 const fs = require("fs");
 const { assert } = require('console');
-const baseUrl = "https://odus3-master.okd.cantaa.de/odus3"
+const baseUrl = "odus3-master"
 
 step("Goto O3D page", async function () {
     await goto(baseUrl);
@@ -25,7 +25,7 @@ step("Browse PDL Zubehör", async function () {
 });
 
 step("Goto PDP", async function () {
-    await click('A0008401100');
+    await click('a productNummber');
 });
 
 step("Download a PDF", async function () {
